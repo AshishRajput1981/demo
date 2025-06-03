@@ -6,5 +6,11 @@ pipeline{
 				echo "testing the pipeline"
 			}
 		}
+		stage("checkout"){
+			steps("checkout step"){
+				git branch:'master', url:'https://github.com/AshishRajput1981/demo.git'
+			}
+		}
+		
 	}
 }
