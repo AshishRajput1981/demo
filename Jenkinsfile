@@ -6,7 +6,7 @@ pipeline{
 				echo "testing the pipeline"
 			}
 		}
-		stage("checkout"){
+		stage("checkout stage"){
 			steps("checkout step"){
 				git branch:'master', url:'https://github.com/AshishRajput1981/demo.git'
 			}
