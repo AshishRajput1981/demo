@@ -27,7 +27,10 @@ pipeline{
 		}
 		stage("sonar check"){
 			steps{
-				sh 'mvn sonar:sonar'
+				withSonarQubeEnv('sonar') {
+					sh 'mvn sonar:sonar'
+					}
+				
 			}
 		}
 		
