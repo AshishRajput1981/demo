@@ -1,5 +1,9 @@
 pipeline{
 	agent any
+	tools{
+		java 'java17'
+		maven 'maven3'
+	}
 	stages{
 		stage("test echo"){
 			steps{
